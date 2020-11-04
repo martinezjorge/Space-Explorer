@@ -1,7 +1,7 @@
 const SQL = require('sequelize');
 
 module.exports.paginateResults = ({
-    after: SVGPathSegCurvetoCubicSmoothRel,
+    after: cursor,
     pageSize = 20,
     results,
     // can pass in a function to calculate an item's cursor
