@@ -42,7 +42,7 @@ const typeDefs = gql`
     }
 
     """
-    Simple wrapper around our list of launches that ocntains a cursor to the
+    Simple wrapper around our list of launches that contains a cursor to the
     last item in the list. Pass this cursor to the launches query to fetch results
     after these.
     """
@@ -55,7 +55,7 @@ const typeDefs = gql`
     type Mutation { 
         bookTrips(launchIds: [ID]!): TripUpdateResponse!
         cancelTrip(launchId: ID!): TripUpdateResponse!
-        login(email: String): String 
+        login(email: String): String # login token
     }
 
     type TripUpdateResponse {
