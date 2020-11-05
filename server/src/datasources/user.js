@@ -40,7 +40,7 @@ class UserAPI extends DataSource {
         // for each launch id, try to book the trip and add it to the results array
         // if successful
         for (const launchId of launchIds) {
-            const res = await this.bookTrips({ launchId });
+            const res = await this.bookTrip({ launchId });
             if (res) results.push(res);
         }
 
